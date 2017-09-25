@@ -1,8 +1,8 @@
+[![Travis-CI Build Status](https://travis-ci.org/Solymi90/r.prog.capstone.svg?branch=master)](https://travis-ci.org/Solymi90/r.prog.capstone)
+
 # Mastering Software Development in R 
 # Capstone Project - NOAA Earthquake Visualizations
 Gábor Solymosi   
-
-[![Travis-CI Build Status](https://travis-ci.org/zkabat/earthquakeVis.svg?branch=master)](https://travis-ci.org/zkabat/earthquakeVis)
 
 This is an R package created for the purpose of visualizing NOAA earthquake data. It processes data from [NOAA database](https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1). 
 
