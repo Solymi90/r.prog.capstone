@@ -2,7 +2,7 @@
 
 # Mastering Software Development in R 
 # Capstone Project - NOAA Earthquake Visualizations
-### Created by: Gábor Solymosi   
+#### Created by: Gábor Solymosi   
 
 This is an R package created for the purpose of visualizing NOAA earthquake data. It processes data from [NOAA database](https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1). 
 
