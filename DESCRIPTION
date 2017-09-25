@@ -1,11 +1,12 @@
 Package: r.prog.capstone
 Title: What the Package Does (one line, title case)
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Gabor", "Solymosi", email = "gabor.solymosi@gmail.com", role = c("aut", "cre"))
+Description: This package supports the Capstone Project of R Programming on Coursera.
 Depends:
     R (>= 3.3.2)
 License: What license is it under?
+Imports: dplyr, ggplot2, readr, grid, lubridate, leaflet, scales, testthat
 Encoding: UTF-8
 LazyData: true
 Suggests:
