@@ -39,8 +39,8 @@ eq_clean_data <- function(raw_data){
   
   clean_data <- clean_data %>%
     dplyr::mutate(DATE = as.Date(dates,format = "%Y-%m-%d", origin = "1970-01-01", tz = "GMT"),
-                  LATITUDE = as.numeric(LATITUDE),
-                  LONGITUDE = as.numeric(LONGITUDE))
+                  LATITUDE = ~ as.numeric(LATITUDE),
+                  LONGITUDE = ~ as.numeric(LONGITUDE))
   
   return(clean_data)
 }
