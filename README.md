@@ -23,7 +23,17 @@ library(leaflet)
 library(scales)
 ```
 
-This vignette gives a brief overview of the r.prog.capstone R package created for the purpose of visualizing NOAA earthquake data. It processes data from [NOAA database](https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1) and visualizes them using `ggplot2` and `leaflet` packages. 
+The readme file gives a brief overview of the r.prog.capstone R package created for the purpose of visualizing NOAA earthquake data. It processes data from [NOAA database](https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1) and visualizes them using `ggplot2` and `leaflet` packages. 
+
+## Installation
+
+To install the package type the following (the development version from Github):
+
+```
+library(devtools)
+install_github("Solymi90/r.prog.capstone")
+library(r.prog.capstone)
+```
 
 ## Package functions
 
