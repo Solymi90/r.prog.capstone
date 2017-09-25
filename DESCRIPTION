@@ -1,5 +1,5 @@
 Package: r.prog.capstone
-Title: What the Package Does (one line, title case)
+Title: Capstone Project of Mastering Software Development in R on Coursera
 Version: 0.0.0.9000
 Authors@R: person("Gabor", "Solymosi", email = "gabor.solymosi@gmail.com", role = c("aut", "cre"))
 Description: This package supports the Capstone Project of R Programming on Coursera.
