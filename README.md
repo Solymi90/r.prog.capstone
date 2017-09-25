@@ -53,8 +53,8 @@ Please find a short description with examples on how to use the functions. The e
 The first function is required to clean data for the visualization. It creates a DATE column in `Date` format, transforms latitude and longitude to numeric format and trims country from LOCATION_NAME.
 
 ```{r eq_read_example, message = FALSE}
-filename <- system.file("extdata/earthquakes.tsv.gz", package = "earthquakeVis")
-data <- readr::read_delim(filename, delim = "\t")
+file_name <- system.file("extdata/data.gz", package = "r.prog.capstone")
+data <- readr::read_delim(file_name, delim = "\t")
 
 eq_clean_data(data)
 ```
