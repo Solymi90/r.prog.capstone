@@ -1,4 +1,4 @@
-#library(testthat)
+library(testthat)
 context("Test functions in the package")
 
 file_name <- system.file("extdata/data.gz", package = "r.prog.capstone")
@@ -22,7 +22,7 @@ test_that("eq_location_clean returns a 'data.frame' object", {
 })
 
 test_that("geom_timeline returns a 'ggplot' object", {
-     g <- data %>% eq_clean_data() %>%
+     g <- raw_data %>% eq_clean_data() %>%
           dplyr::filter(COUNTRY %in% c("GREECE", "ITALY"), YEAR > 2000) %>%
           ggplot2::ggplot(ggplot2::aes(x = DATE,
                                        y = COUNTRY,
@@ -34,7 +34,7 @@ test_that("geom_timeline returns a 'ggplot' object", {
 })
 
 test_that("geom_timeline_label returns a 'ggplot' object", {
-     g <- data %>% eq_clean_data() %>%
+     g <- raw_data %>% eq_clean_data() %>%
           dplyr::filter(COUNTRY %in% c("GREECE", "ITALY"), YEAR > 2000) %>%
           ggplot2::ggplot(ggplot2::aes(x = DATE,
                                        y = COUNTRY,
@@ -46,7 +46,7 @@ test_that("geom_timeline_label returns a 'ggplot' object", {
 })
 
 test_that("theme_timeline returns a 'ggplot' object", {
-     g <- data %>% eq_clean_data() %>%
+     g <- raw_data %>% eq_clean_data() %>%
           dplyr::filter(COUNTRY %in% c("GREECE", "ITALY"), YEAR > 2000) %>%
           ggplot2::ggplot(ggplot2::aes(x = DATE,
                                        y = COUNTRY,
@@ -58,7 +58,7 @@ test_that("theme_timeline returns a 'ggplot' object", {
 })
 
 test_that("eq_map returns a 'leaflet' object", {
-     l <- data %>%
+     l <- raw_data %>%
           eq_clean_data() %>%
           dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
           dplyr::mutate(popup_text = eq_create_label(.)) %>%
@@ -67,9 +67,9 @@ test_that("eq_map returns a 'leaflet' object", {
 })
 
 test_that("eq_create_label returns a 'character' vector", {
-     expect_is(eq_create_label(data), "character")
+     expect_is(eq_create_label(raw_data), "character")
 })
 
 test_that("eq_create_label has the same length as input data frame", {
-     expect_equal(length(eq_create_label(data)), dim(data)[1])
+     expect_equal(length(eq_create_label(raw_data)), dim(raw_data)[1])
 })
